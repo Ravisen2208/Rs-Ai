@@ -3,18 +3,18 @@ import { UploadIcon, VideoIcon, ZapIcon } from 'lucide-react';
 export const featuresData = [
     {
         icon: <UploadIcon className="w-6 h-6" />,
-        title: 'Discovery & Planning',
-        desc: 'We understand your goals, audience and challenges to craft a clear, actionable strategy.'
+        title: 'Smart Upload',
+        desc: 'Drag and drop your assets. We auto-optimize formats and sizes .'
     },
     {
         icon: <ZapIcon className="w-6 h-6" />,
-        title: 'Design & Development',
-        desc: 'High-quality design and scalable development focused on performance and usability.'
+        title: 'Instent Generation ',
+        desc: 'Optimised models deliver output in seconds with great fidelity.'
     },
     {
         icon: <VideoIcon className="w-6 h-6" />,
-        title: 'Launch & Growth',
-        desc: 'We launch, optimize and continuously improve to drive measurable business growth.'
+        title: 'Video Synthesis',
+        desc: 'Bring Product short to life with short-from, social-ready videos in seconds.'
     }
 ];
 
@@ -22,43 +22,44 @@ export const plansData = [
     {
         id: 'starter',
         name: 'Starter',
-        price: '$499',
-        desc: 'Best for early-stage startups.',
-        credits: 'One-time',
+        price: '₹145',
+        desc: 'Try the platfrom at no cost.',
+        credits: '25',
         features: [
-            'Project discovery & planning',
-            'UI/UX design',
-            'Basic website development',
-            '1 revision round',
+            '25 Credits  ',
+            'Standard quality.',
+            'No watermark',
+            'One user',
             'Email support'
         ]
     },
     {
         id: 'pro',
-        name: 'Growth',
-        price: '$1,499',
-        desc: 'Growing teams and businesses.',
-        credits: 'Monthly',
+        name: 'Pro',
+        price: '₹399',
+        desc: ' small teams and creators.',
+        credits: '80',
         features: [
-            'Everything in Starter',
-            'Advanced UI/UX design',
-            'Custom development',
-            'Performance optimization',
+            '80 Credits ',
+            'High quality',
+            'No watermark',
+            'Up to 3 users',
             'Priority support'
         ],
         popular: true
     },
     {
         id: 'ultra',
-        name: 'Scale',
-        price: '$3,999',
-        desc: 'For brands ready to scale fast.',
-        credits: 'Custom',
+        name: 'Ultra',
+        price: '₹799',
+        desc: 'Big brands and agencies.',
+        credits: '300',
         features: [
-            'Everything in Growth',
-            'Dedicated project manager',
-            'Ongoing optimization',
-            'Marketing & growth support',
+            '300 Credits ',
+            'FHD quality',
+            'No watermark',
+            'Up to 5 users',
+            'Fast generation',
             'Chat + Email support'
         ]
     }
@@ -66,31 +67,31 @@ export const plansData = [
 
 export const faqData = [
     {
-        question: 'What services does your agency provide?',
-        answer: 'We offer end-to-end digital services including brand strategy, UI/UX design, web and app development and growth-focused marketing solutions.'
+        question: 'How does the AI generation work?',
+        answer: 'We leverage state-of-the-art diffusion models trained on diverse datasets. You upload your assets, select styles and parameters, and our AI generates optimized product visuals in seconds.'
     },
     {
-        question: 'Do you work with startups or only large companies?',
-        answer: 'We work with startups, growing businesses and established brands. Our process is flexible and tailored to match your goals and scale.'
+        question: 'Do I own the generated image?',
+        answer: 'YES- you retain full ownership and commercial rights to all images generated using our platform. We do not claim any rights over your content.'
     },
     {
-        question: 'How long does a typical project take?',
-        answer: 'Project timelines vary by scope, but most projects take between 2–6 weeks. We provide a clear timeline after the discovery phase.'
+        question: 'Can I caancel anytime?',
+        answer: 'YES- Our subscription plans are flexible with no long-term commitments. You can cancel or change your plan at any time from your account settings without any penalties.'
     },
     {
-        question: 'Do you offer ongoing support after launch?',
-        answer: 'Yes. We offer maintenance, optimization and growth support packages to ensure your product continues to perform and evolve.'
+        question: 'What input formats do you support?',
+        answer: 'We accept common image formats like JPEG, PNG, and SVG. For video synthesis, we support MP4 and MOV formats. Our platform automatically optimizes your uploads for the best results.'
     }
 ];
 
 export const footerLinks = [
     {
-        title: "Company",
+        title: "Quick Links",
         links: [
             { name: "Home", url: "#" },
-            { name: "Services", url: "#" },
-            { name: "Work", url: "#" },
-            { name: "Contact", url: "#" }
+            { name: "Features", url: "#" },
+            { name: "Pricing", url: "#" },
+            { name: "FAQ", url: "#" }
         ]
     },
     {
@@ -104,8 +105,8 @@ export const footerLinks = [
         title: "Connect",
         links: [
             { name: "Twitter", url: "#" },
-            { name: "LinkedIn", url: "#" },
-            { name: "GitHub", url: "#" }
+            { name: "LinkedIn", url: "https://www.linkedin.com/in/ravisen2004/" },
+            { name: "GitHub", url: "https://github.com/Ravisen2208" }
         ]
     }
 ];
