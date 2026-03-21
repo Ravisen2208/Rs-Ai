@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Title from "../components/Title";
 import UploadZone from "../components/UploadZone";
+import { RectangleHorizontal, RectangleVerticalIcon } from "lucide-react";
 
 const Generatior = () => {
   const [name, setName] = useState('');
@@ -52,8 +53,50 @@ const Generatior = () => {
             />
           </div>
           {/* Right column */}
-          <div>
-            <p>Right col</p>
+          <div className="w-full">
+          <div className="mb-4">
+            <label htmlFor="name" className="block text -sm mb-4">Project Name</label>
+            <input
+              type="text" id="name" value={name}
+              onChange={(e) => setName(e.target.value)}
+              placeholder="Name your project." required 
+              className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+           </div>
+            <div className="mb-4 text-gray-300">
+              <label htmlFor="productName" className="block text -sm mb-4">Product Name</label>
+              <input
+                type="text" id="productName" value={ProductName}
+                onChange={(e) => setProductName(e.target.value)}
+                placeholder="Enter the name of the product." required 
+                className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+          </div>
+          <div className="mb-4 text-gray-300">
+              <label htmlFor="productDescripation" className="block text -sm mb-4">Product Descripation <span className="text-xs text-violet-400">(optional)</span></label>
+              <textarea
+                id="productDescripation" value={ProductDescripation}
+                onChange={(e) => setProductDescripation(e.target.value)}
+                placeholder="Enter the description of the product." required 
+                className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+            </div>
+            <div className="mb-4 text-gray-300">
+              <label className="block text -sm mb-4">Aspect Ratio</label>
+              <div className="flex gap-3">
+              <RectangleVerticalIcon onClick={() => setAspectRatio('9:16')} className={`p-2.5 size-13 bg-white/6 rounded transition-all ring-2
+                ring-transparent cursor-pointer ${aspectRatio == '9:16' ?
+               'ring-violet-500/50 bg-white/10' : `` }  `} />
+               <RectangleHorizontal onClick={() => setAspectRatio('16:9')} className={`p-2.5 size-13 bg-white/6 rounded transition-all ring-2
+                ring-transparent cursor-pointer ${aspectRatio == '16:9' ?
+               'ring-violet-500/50 bg-white/10' : `` }  `} />
+              </div>
+              </div>
+              <div className="mb-4 text-gray-300">
+              <label htmlFor="userPrompt" className="block text -sm mb-4">User prompt <span className="text-xs text-violet-400">(optional)</span></label>
+              <textarea
+                id="userPrompt" value={userPrompt}
+                onChange={(e) =>setUserPrompt(e.target.value)}
+                placeholder=" Describe how you want the narration to be." required 
+                className="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+            </div>
           </div>
         </div>
       </form>

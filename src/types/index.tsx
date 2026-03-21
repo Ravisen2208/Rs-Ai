@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 export interface UploadZoneProps {
@@ -5,4 +6,31 @@ export interface UploadZoneProps {
     file: File | null;
     onClear: () => void;
     onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+}
+export interface user {
+    id?: string;
+    name?: string;
+    email?: string;
+   
+}
+
+export interface Project {
+    id: string;
+    name ?: string;
+     userId?: string;
+    user?: user;
+    productName: string;
+    productDescription?: string;
+    userPrompt?: string;
+    aspectRatio: string;
+    targetLength?: number;
+    generatedImage?: string;
+    generatedVideo?: string;
+    isGenerating: boolean;
+    isPublished:boolean;
+    error?: string;
+    createdAt: Date | string;
+    updatedAt?: Date | string;
+    uploadedImages: string[];
+
 }
